@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="./css/default.css">
@@ -9,7 +11,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inicio de sesion</title>
 </head>
-<body> 
+<body>
+  <head>
+      <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+        <nav  class="page-footer blue-grey darken-1" >
+          <div class="nav-wrapper ">
+            <a href="#!" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./login.html">Iniciar sesion</a></li>
+              <li><a href="./Registro.html">Registrar</a></li>
+              
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Mi perfil<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+          </div>
+        </nav>
+         
+  </head>
   <!--
     Cpe
   -->
@@ -34,7 +57,7 @@
                       </div>
                       <div align="center">
                           <label>Registrar como: </label>
-                          <a href="Registroinv.html">Invercionista </a>
+                          <a href="Registroinv.html">Inversionista </a>
                           <a href="registro.html">Emprendedor</a>
                       </div>
                 </div>
@@ -81,10 +104,12 @@
         </div>
       </footer>
 
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
      <script type="text/javascript" src="./js/materialize.min.js"></script>
      <script src="./js/jquery-2.1.1.min.js"></script>
      <script src="./js/jquery.validate.min.js"></script>
     <script src="./loginVal.js"></script>
+    <script type="text/javascript" src="./js/carga.js"></script>
+
 </body>
 </html>
